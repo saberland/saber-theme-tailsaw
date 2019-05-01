@@ -1,0 +1,78 @@
+{
+  "name": "saber-theme-tailsaw",
+  "version": "1.0.0",
+  "license": "MIT",
+  "author": {
+    "email": "hi@krmax44.de",
+    "name": "krmax44",
+    "url": "https://krmax44.de"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/krmax44/saber-theme-tailsaw.git"
+  },
+  "description": "A starter template for creating a beautiful, customizable blog in Saber with minimal effort.",
+  "keywords": [
+    "saber",
+    "saber-theme",
+    "jigsawm",
+    "theme",
+    "tailwind",
+    "clean",
+    "simple",
+    "transitions",
+    "page-transitions",
+    "jekyll"
+  ],
+  "scripts": {
+    "build": "vue-compile src -o dist",
+    "prepublishOnly": "yarn build",
+    "dev:example": "saber example",
+    "build:example": "saber build example",
+    "lint": "xo"
+  },
+  "files": [
+    "dist"
+  ],
+  "xo": {
+    "extends": [
+      "rem",
+      "plugin:prettier/recommended"
+    ],
+    "rules": {
+      "import/no-unassigned-import": "off",
+      "unicorn/filename-case": "off",
+      "no-await-in-loop": "off",
+      "unicorn/no-abusive-eslint-disable": "off"
+    },
+    "ignore": [
+      ".saber/**"
+    ],
+    "envs": [
+      "browser"
+    ]
+  },
+  "prettier": {
+    "semi": false,
+    "singleQuote": true,
+    "bracketSpacing": true
+  },
+  "dependencies": {
+    "nprogress": "^0.2.0",
+    "tailwindcss": "^0.7.4",
+    "typeface-nunito-sans": "^0.0.72"
+  },
+  "devDependencies": {
+    "@fullhuman/postcss-purgecss": "^1.2.0",
+    "autoprefixer": "^9.5.1",
+    "eslint-config-prettier": "^4.2.0",
+    "eslint-config-rem": "^4.0.0",
+    "eslint-plugin-prettier": "^3.0.1",
+    "postcss-nested": "^4.1.2",
+    "saber": "^0.4.7",
+    "saber-highlighter-prism": "^0.2.0",
+    "saber-plugin-query-posts": "^0.1.3",
+    "vue-compile": "^0.5.3",
+    "xo": "^0.24.0"
+  }
+}
