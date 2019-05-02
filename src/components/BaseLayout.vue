@@ -220,8 +220,8 @@ pre {
 }
 
 ::selection {
-  @apply .bg-blue;
-  @apply .text-white;
+  @apply .bg-indigo-lightest;
+  @apply .text-blue-dark;
 }
 
 @tailwind utilities;
