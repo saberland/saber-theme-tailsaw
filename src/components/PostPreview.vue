@@ -14,7 +14,7 @@
       </saber-link>
     </h2>
 
-    <p class="mb-4 mt-0" v-html="post.attributes.excerpt" />
+    <div class="mb-4 mt-0" v-html="post.attributes.excerpt"></div>
 
     <saber-link
       :to="post.attributes.permalink"
