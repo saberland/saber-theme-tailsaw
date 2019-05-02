@@ -1,11 +1,5 @@
 const { join } = require('path')
 
-class TailwindExtractor {
-  static extract(content) {
-    return content.match(/[A-Za-z0-9-_:/]+/g) || []
-  }
-}
-
 module.exports = {
   plugins: [
     require('tailwindcss')('tailwind.js'),
@@ -16,11 +10,21 @@ module.exports = {
         join(__dirname, './src/**/*.vue'),
         join(__dirname, './src/**/*.js')
       ],
-      extractors: [
-        {
-          extractor: TailwindExtractor,
-          extensions: ['js', 'vue']
-        }
+      defaultExtractor(content) {
+        const contentWithoutStyleBlocks = content.replace(
+          /<style[^]+?<\/style>/gi,
+          ''
+        )
+        return (
+          contentWithoutStyleBlocks.match(/[A-Za-z0-9-_/:]*[A-Za-z0-9-_/]+/g) ||
+          []
+        )
+      },
+      whitelist: [],
+      whitelistPatterns: [
+        /-(leave|enter|appear)(|-(to|from|active))$/,
+        /^(?!(|.*?:)cursor-move).+-move$/,
+        /^router-link(|-exact)-active$/
       ]
     })
   ]

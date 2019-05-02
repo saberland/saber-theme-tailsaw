@@ -18,6 +18,9 @@ module.exports = {
           perPage: 2
         }
       }
+    },
+    {
+      resolve: 'saber-plugin-critical'
     }
   ]
 }
