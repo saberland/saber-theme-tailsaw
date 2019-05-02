@@ -72,7 +72,8 @@ export default {
   }
 }
 
-html {
+html,
+body {
   box-sizing: border-box;
 }
 
