@@ -1,6 +1,6 @@
 # Tailsaw: Saber Blog Starter Template
 
-This is a starter template for creating a beautiful, customizable blog in Saber with minimal effort. It is based on the [Blog Template](https://github.com/tightenco/jigsaw-blog-template) for Jigsaw.
+This is a starter template for creating a beautiful, customizable blog in Saber with minimal effort. It is based on the [Blog Template](https://github.com/tightenco/jigsaw-blog-template) for Jigsaw. See the [demo](http://saber-theme-tailsaw.netlify.com/).
 
 ## Installation
 
