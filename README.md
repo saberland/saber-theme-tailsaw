@@ -4,7 +4,15 @@ This is a starter template for creating a beautiful, customizable blog in Saber 
 
 ## Installation
 
-_Coming soon..._
+```bash
+yarn add saber-theme-tailsaw
+```
+
+Then, in your Saber config file:
+
+```yml
+theme: tailsaw
+```
 
 This starter template includes samples of common page types, and comes pre-configured with:
 
