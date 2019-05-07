@@ -35,7 +35,7 @@
                 'active text-blue-dark':
                   $router.currentRoute === $router.match(`/${route}`)
               }"
-              v-for="route in ['blog', 'about', 'contact']"
+              v-for="route in $themeConfig.route"
               :key="route"
             >
               {{ route.charAt(0).toUpperCase() + route.slice(1) }}
