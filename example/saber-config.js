@@ -7,6 +7,9 @@ module.exports = {
     post: '/blog/:slug',
     page: '/:slug'
   },
+  themeConfig: {
+    route: ['about', 'blog', 'contact']
+  },
   markdown: {
     highlighter: 'prism'
   },
