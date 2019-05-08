@@ -7,20 +7,20 @@ module.exports = {
     post: '/blog/:slug',
     page: '/:slug'
   },
-  markdown: {
-    highlighter: 'prism'
-  },
-  plugins: [
-    {
-      resolve: 'saber-plugin-query-posts',
-      options: {
-        paginationOptions: {
-          perPage: 2
-        }
+  themeConfig: {
+    nav: [
+      {
+        text: 'About',
+        link: '/about/'
+      },
+      {
+        text: 'Blog',
+        link: '/blog/'
+      },
+      {
+        text: 'Contact',
+        link: '/contact/'
       }
-    },
-    {
-      resolve: 'saber-plugin-critical'
-    }
-  ]
+    ]
+  }
 }

@@ -27,19 +27,11 @@
 
         <div class="flex flex-1 justify-end items-center">
           <nav class="hidden lg:flex items-center justify-end text-lg">
-            <saber-link
-              :to="`/${route}`"
-              :title="$siteConfig.title"
-              :class="{
-                'ml-6 text-grey-darker hover:text-blue-dark': true,
-                'active text-blue-dark':
-                  $router.currentRoute === $router.match(`/${route}`)
-              }"
-              v-for="route in ['blog', 'about', 'contact']"
+            <NavLink
+              class="ml-6 text-grey-darker hover:text-blue-dark"
+              v-for="route in $themeConfig.nav"
               :key="route"
-            >
-              {{ route.charAt(0).toUpperCase() + route.slice(1) }}
-            </saber-link>
+            />
           </nav>
 
           <button
@@ -81,20 +73,11 @@
     >
       <ul class="list-reset my-0">
         <li class="pl-4">
-          <saber-link
-            :to="`/${route}`"
-            :title="$siteConfig.title"
-            :class="{
-              'nav-menu__item hover:text-blue': true,
-              'active text-blue-dark':
-                $router.currentRoute === $router.match(`/${route}`),
-              hidden: !nav
-            }"
-            v-for="route in ['blog', 'about', 'contact']"
+          <NavLink
+            class="nav-menu__item hover:text-blue"
+            v-for="route in $themeConfig.nav"
             :key="route"
-          >
-            {{ route.charAt(0).toUpperCase() + route.slice(1) }}
-          </saber-link>
+          />
         </li>
       </ul>
     </nav>
@@ -102,7 +85,10 @@
 </template>
 
 <script>
+import NavLink from './NavLink'
+
 export default {
+  components: { NavLink },
   data() {
     return {
       nav: false
