@@ -30,6 +30,7 @@
             <NavLink
               class="ml-6 text-grey-darker hover:text-blue-dark"
               v-for="route in $themeConfig.nav"
+              :route="route"
               :key="route"
             />
           </nav>
@@ -76,6 +77,7 @@
           <NavLink
             class="nav-menu__item hover:text-blue"
             v-for="route in $themeConfig.nav"
+            :route="route"
             :key="route"
           />
         </li>
