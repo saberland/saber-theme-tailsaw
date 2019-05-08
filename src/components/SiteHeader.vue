@@ -90,8 +90,8 @@
                 $router.currentRoute === $router.match(`/${route}`),
               hidden: !nav
             }"
-            v-for="route in ['blog', 'about', 'contact']"
-            :key="route"
+             v-for="route in $themeConfig.route"
+             :key="route"
           >
             {{ route.charAt(0).toUpperCase() + route.slice(1) }}
           </saber-link>
