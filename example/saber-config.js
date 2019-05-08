@@ -7,9 +7,6 @@ module.exports = {
     post: '/blog/:slug',
     page: '/:slug'
   },
-  markdown: {
-    highlighter: 'prism'
-  },
   plugins: [
     {
       resolve: 'saber-plugin-query-posts',
@@ -18,6 +15,9 @@ module.exports = {
           perPage: 2
         }
       }
+    },
+    {
+      resolve: 'saber-plugin-prismjs'
     },
     {
       resolve: 'saber-plugin-critical'
