@@ -25,6 +25,7 @@
     "jekyll"
   ],
   "scripts": {
+    "test": "echo lol",
     "build": "vue-compile src -o dist",
     "prepublishOnly": "yarn build",
     "dev:example": "saber example",
