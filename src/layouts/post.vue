@@ -24,21 +24,21 @@
     <nav class="flex justify-between text-sm md:text-base">
       <div>
         <saber-link
-          :to="page.prevPost.attributes.permalink"
-          :title="`Older Post: ${page.prevPost.attributes.title}`"
+          :to="page.prevPost.permalink"
+          :title="`Older Post: ${page.prevPost.title}`"
           v-if="page.prevPost"
         >
-          &LeftArrow; {{ page.prevPost.attributes.title }}
+          &LeftArrow; {{ page.prevPost.title }}
         </saber-link>
       </div>
 
       <div>
         <saber-link
-          :to="page.nextPost.attributes.permalink"
-          :title="`Newer Post: ${page.nextPost.attributes.title}`"
+          :to="page.nextPost.permalink"
+          :title="`Newer Post: ${page.nextPost.title}`"
           v-if="page.nextPost"
         >
-          {{ page.nextPost.attributes.title }} &RightArrow;
+          {{ page.nextPost.title }} &RightArrow;
         </saber-link>
       </div>
     </nav>

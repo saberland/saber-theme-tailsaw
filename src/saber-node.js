@@ -7,12 +7,13 @@ exports.onCreatePages = function() {
       return a.attributes.createdAt > b.attributes.createdAt ? 1 : -1
     })
 
+  const selectFields = page =>
+    page && {
+      title: page.attributes.title,
+      permalink: page.attributes.permalink
+    }
   for (const [index, post] of posts.entries()) {
-    // It's NOT recommended to mutate `page` directly to add addtional props
-    // Use `extendPageProp` instead to add more properties to the `page` prop
-    this.pages.extendPageProp(post.internal.id, {
-      prevPost: this.pages.getPagePublicFields(posts[index - 1]),
-      nextPost: this.pages.getPagePublicFields(posts[index + 1])
-    })
+    post.prevPost = selectFields(posts[index - 1])
+    post.nextPost = selectFields(posts[index + 1])
   }
 }
