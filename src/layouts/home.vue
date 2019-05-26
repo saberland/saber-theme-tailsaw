@@ -3,10 +3,10 @@
     <div v-for="(post, i) in featuredPosts" :key="post.attributes.slug">
       <div class="w-full mb-6">
         <img
-          :src="post.attributes.cover"
+          :src="post.attributes.assets.cover"
           :alt="`${post.attributes.title} cover image`"
           class="mb-2"
-          v-if="post.attributes.cover"
+          v-if="post.attributes.assets.cover"
         />
 
         <p class="text-grey-darker font-medium my-2">

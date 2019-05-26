@@ -6,7 +6,8 @@ author: Jane
 categories:
   - meta
 slug: first-post
-cover: /cover-1.png
+assets:
+  cover: ./first-post.png
 featured: true
 ---
 
@@ -19,10 +20,10 @@ This is the first post!
 You can do all crazy things with Saber!
 
 ```js
-console.log("woah!")
+console.log('woah!')
 ```
 
-In fact, <button class="bg-blue hover:bg-blue-dark text-white font-bold py-2 px-4 rounded" @click="count++">{{ count }}</button>  crazy things!
+In fact, <button class="bg-blue hover:bg-blue-dark text-white font-bold py-2 px-4 rounded" @click="count++">{{ count }}</button> crazy things!
 
 <script>
 export default {

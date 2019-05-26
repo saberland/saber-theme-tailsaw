@@ -7,13 +7,14 @@ categories:
   - meta
   - bar
 slug: second-post
-cover: /cover-2.png
+assets:
+  cover: ./second-post.png
 ---
 
 This is the second post. Hope this is not getting too repetitive!
 
 > Id ea nostrud enim proident officia anim aute.
-> 
+>
 > -- Surely someone
 
 This is better than CoolMathGames:

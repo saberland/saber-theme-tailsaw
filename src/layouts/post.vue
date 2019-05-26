@@ -5,7 +5,7 @@
       {{ page.attributes.author }} • {{ date(page.attributes.createdAt) }}
     </p>
 
-    <img :src="page.attributes.cover" :alt="`${page.attributes.title} cover image`" class="mb-2" v-if="page.attributes.cover">
+    <img :src="page.attributes.assets.cover" :alt="`${page.attributes.title} cover image`" class="mb-2" v-if="page.attributes.assets.cover">
 
     <saber-link
       :to="category.permalink"
