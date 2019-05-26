@@ -20,7 +20,7 @@ module.exports = {
           []
         )
       },
-      whitelist: [],
+      whitelist: ['blockquote'],
       whitelistPatterns: [
         /-(leave|enter|appear)(|-(to|from|active))$/,
         /^(?!(|.*?:)cursor-move).+-move$/,
