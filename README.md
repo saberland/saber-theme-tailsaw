@@ -57,7 +57,7 @@ featured: true
 
 ### Adding Assets
 
-You can easily include assets in your posts, just by [linking to their relative location](https://saber.land/docs/images-fonts-and-files.html). Cover images need to be located in the `public` folder for now, until [frontmatter asset loading is implemented](https://github.com/egoist/saber/issues/80).
+You can easily include assets in your posts, just by [linking to their relative location](https://saber.land/docs/images-fonts-and-files.html). 
 
 ---
 
