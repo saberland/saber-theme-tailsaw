@@ -7558,9 +7558,9 @@ saber-plugin-prismjs@^0.2.0:
     saber-highlighter-prism "^0.3.0"
 
 saber-plugin-query-posts@^0.3.1:
-  version "0.3.1"
-  resolved "https://registry.npmjs.org/saber-plugin-query-posts/-/saber-plugin-query-posts-0.3.1.tgz#6f2d712a88bc1f29182becb3293326bdbed06db5"
-  integrity sha512-OwJCJc+3sIOpgnPLArpU+5yjIG+IsOk4cVMnDghM27rWI5yvJ5YEgfbhOhL6GRwILy2BQrOve9HaABDUlnV9Dw==
+  version "0.3.2"
+  resolved "https://registry.yarnpkg.com/saber-plugin-query-posts/-/saber-plugin-query-posts-0.3.2.tgz#750e17a7ecf9574dee80a4464075717cb56e3d56"
+  integrity sha512-uHWJ0nDRkZ91acSraF8ovq3ZO4hgXfQzqWSVPWzrR9JocW2VQ2JOAbt5vJUBtO5PT8myfkysJwk1rhS7mOfjFQ==
   dependencies:
     slugo "^0.2.3"
     url-join "^4.0.0"
