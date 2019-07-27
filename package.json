@@ -70,16 +70,16 @@
     "eslint-plugin-prettier": "^3.1.0",
     "postcss-nested": "^4.1.2",
     "prismjs": "^1.16.0",
-    "saber": "^0.6.4",
+    "saber": "^0.7.0",
     "saber-plugin-critical": "^1.0.2",
-    "saber-plugin-prismjs": "^0.2.0",
-    "saber-plugin-query-posts": "^0.3.1",
+    "saber-plugin-prismjs": "^0.2.1",
+    "saber-plugin-query-posts": "^0.4.0",
     "tailwindcss": "^0.7.4",
     "vue-compile": "^0.5.3",
     "xo": "^0.24.0"
   },
   "peerDependencies": {
-    "saber": ">=0.6.3",
-    "saber-plugin-query-posts": ">=0.3.1"
+    "saber": ">=0.7.0",
+    "saber-plugin-query-posts": ">=0.4.0"
   }
 }

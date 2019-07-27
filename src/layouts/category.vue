@@ -1,12 +1,12 @@
 <template>
   <BaseLayout :page="page">
     <h1>
-      {{ page.category ? `Category: ${page.category}` : page.attributes.title }}
+      {{ page.category ? `Category: ${page.category}` : page.title }}
     </h1>
 
     <hr class="border-b my-6" />
 
-    <div v-for="(post, i) in page.posts" :key="post.attributes.slug">
+    <div v-for="(post, i) in page.posts" :key="post.slug">
       <PostPreview :post="post" />
 
       <hr class="border-b my-6" v-if="page.posts.length !== i + 1" />
