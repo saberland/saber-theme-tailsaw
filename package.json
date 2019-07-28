@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/krmax44/saber-theme-tailsaw.git"
+    "url": "github:saberland/saber-theme-tailsaw"
   },
   "description": "A starter template for creating a beautiful, customizable blog in Saber with minimal effort.",
   "keywords": [
