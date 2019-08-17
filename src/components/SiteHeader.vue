@@ -38,7 +38,7 @@
           </nav>
 
           <button
-            class="flex justify-center items-center bg-blue border border-blue h-10 px-5 rounded-full lg:hidden focus:outline-none"
+            class="flex justify-center items-center bg-blue-500 border border-blue-500 h-10 px-5 rounded-full lg:hidden focus:outline-none"
             @click="nav = !nav"
           >
             <svg
