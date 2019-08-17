@@ -104,7 +104,7 @@ export default {
 
 <style lang="postcss">
 .nav-menu {
-  @apply .bg-grey-lighter;
+  @apply .bg-gray-200;
   @apply .pb-2;
   @apply .pt-6;
   @apply .px-2;
@@ -114,11 +114,10 @@ export default {
 
 .nav-menu__item {
   @apply .block;
-  @apply .list-reset;
   @apply .no-underline;
   @apply .mb-4;
   @apply .mt-0;
-  @apply .text-grey-darker;
+  @apply .text-gray-800;
   @apply .text-sm;
 }
 </style>
