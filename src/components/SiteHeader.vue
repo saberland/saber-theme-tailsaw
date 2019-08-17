@@ -4,7 +4,7 @@
       class="flex items-center shadow bg-white border-b h-24 py-4"
       role="banner"
     >
-      <div class="container flex items-center max-w-8xl mx-auto px-4 lg:px-8">
+      <div class="container flex items-center max-w-4xl mx-auto px-4 lg:px-8">
         <div class="flex items-center">
           <saber-link
             to="/"
@@ -18,7 +18,7 @@
             />
 
             <h1
-              class="text-lg md:text-2xl text-blue-800 font-semibold hover:text-blue-600 my-0"
+              class="text-lg md:text-2xl text-blue-darkest font-semibold hover:text-blue-dark my-0"
             >
               {{ $siteConfig.title }}
             </h1>
@@ -26,6 +26,8 @@
         </div>
 
         <div class="flex flex-1 justify-end items-center">
+          <SiteSearch />
+
           <nav class="hidden lg:flex items-center justify-end text-lg">
             <NavLink
               class="ml-6 text-grey-darker hover:text-blue-dark"
@@ -36,7 +38,7 @@
           </nav>
 
           <button
-            class="flex justify-center items-center bg-blue-500 border border-blue-500 h-10 px-5 rounded-full lg:hidden focus:outline-none"
+            class="flex justify-center items-center bg-blue border border-blue h-10 px-5 rounded-full lg:hidden focus:outline-none"
             @click="nav = !nav"
           >
             <svg
@@ -72,7 +74,7 @@
         'lg:block': nav
       }"
     >
-      <ul class="list-none p0 my-0">
+      <ul class="list-reset my-0">
         <li class="pl-4">
           <NavLink
             class="nav-menu__item hover:text-blue"
@@ -88,9 +90,10 @@
 
 <script>
 import NavLink from './NavLink'
+import SiteSearch from './SiteSearch'
 
 export default {
-  components: { NavLink },
+  components: { NavLink, SiteSearch },
   data() {
     return {
       nav: false
@@ -101,7 +104,7 @@ export default {
 
 <style lang="postcss">
 .nav-menu {
-  @apply .bg-gray-200;
+  @apply .bg-grey-lighter;
   @apply .pb-2;
   @apply .pt-6;
   @apply .px-2;
@@ -111,10 +114,11 @@ export default {
 
 .nav-menu__item {
   @apply .block;
+  @apply .list-reset;
   @apply .no-underline;
   @apply .mb-4;
   @apply .mt-0;
-  @apply .text-gray-800;
+  @apply .text-grey-darker;
   @apply .text-sm;
 }
 </style>
