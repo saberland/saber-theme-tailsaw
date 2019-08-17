@@ -73,6 +73,7 @@
     "saber": "^0.7.0",
     "saber-plugin-critical": "^1.0.2",
     "saber-plugin-prismjs": "^0.2.1",
+    "saber-plugin-local-search": ">=0.0.1",
     "saber-plugin-query-posts": "^0.4.0",
     "tailwindcss": "^1.1.2",
     "vue-compile": "^0.6.0",
