@@ -32,9 +32,6 @@ export default {
       bodyAttrs: {
         class:
           'flex flex-col justify-between min-h-screen bg-gray-lightest text-gray-800 leading-normal font-sans'
-      },
-      htmlAttrs: {
-        class: 'reset-box-sizing'
       }
     }
   },
@@ -66,8 +63,7 @@ export default {
 }
 
 html {
-  box-sizing: border-box !important;
-  color: red;
+  box-sizing: border-box;
 }
 
 body {
