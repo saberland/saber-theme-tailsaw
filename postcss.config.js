@@ -2,13 +2,13 @@ const { join } = require('path')
 
 module.exports = {
   plugins: [
-    require('tailwindcss')('tailwind.js'),
+    require('tailwindcss'),
     require('autoprefixer')(),
     require('postcss-nested'),
     require('@fullhuman/postcss-purgecss')({
       content: [
-        join(__dirname, './src/**/*.vue'),
-        join(__dirname, './src/**/*.js')
+        join(__dirname, 'src/**/*.vue'),
+        join(__dirname, 'src/**/*.js')
       ],
       defaultExtractor(content) {
         const contentWithoutStyleBlocks = content.replace(
@@ -20,7 +20,7 @@ module.exports = {
           []
         )
       },
-      whitelist: ['blockquote'],
+      whitelist: ['blockquote', 'body', 'html'],
       whitelistPatterns: [
         /-(leave|enter|appear)(|-(to|from|active))$/,
         /^(?!(|.*?:)cursor-move).+-move$/,

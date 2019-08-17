@@ -3,8 +3,8 @@
     <SiteHeader />
 
     <main
+      class="flex-auto w-full container max-w-4xl mx-auto py-16 px-6"
       role="main"
-      class="flex-auto w-full container max-w-xl mx-auto py-16 px-6"
     >
       <slot />
     </main>
@@ -24,22 +24,17 @@ export default {
   components: { SiteHeader, SiteFooter },
   props: ['page'],
   head() {
-    const pageTitle = this.page.title
+    const pageTitle = this.page && this.page.title
     const siteTitle = this.$siteConfig.title
 
     return {
       title: pageTitle ? `${pageTitle} - ${siteTitle}` : siteTitle,
       bodyAttrs: {
-        class: [
-          'flex',
-          'flex-col',
-          'justify-between',
-          'min-h-screen',
-          'bg-grey-lightest',
-          'text-grey-darkest',
-          'leading-normal',
-          'font-sans'
-        ].join(' ')
+        class:
+          'flex flex-col justify-between min-h-screen bg-gray-lightest text-gray-800 leading-normal font-sans'
+      },
+      htmlAttrs: {
+        class: 'reset-box-sizing'
       }
     }
   },
@@ -48,7 +43,7 @@ export default {
 </script>
 
 <style lang="postcss">
-@tailwind preflight;
+@tailwind base;
 @tailwind components;
 
 .page-enter-active,
@@ -57,14 +52,12 @@ export default {
     transition: opacity 0.5s, transform 0.5s ease;
   }
 }
-
 .page-leave-to {
   main {
     opacity: 0;
     transform: translateX(-30%);
   }
 }
-
 .page-enter {
   main {
     opacity: 0;
@@ -72,45 +65,39 @@ export default {
   }
 }
 
-html,
-body {
-  box-sizing: border-box;
+html {
+  box-sizing: border-box !important;
+  color: red;
 }
 
 body {
   font-size: 17px;
 }
 
-.app {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
-
 a {
   @apply .font-semibold;
   @apply .no-underline;
-  @apply .text-blue-dark;
+  @apply .text-blue-600;
 
   &:hover {
-    @apply .text-blue-darker;
+    @apply .text-blue-800;
   }
 }
 
 blockquote {
-  @apply .border-blue-light;
+  @apply .border-blue-400;
   @apply .border-l-4;
   @apply .font-normal;
   @apply .italic;
   @apply .my-8;
   @apply .pl-6;
-  @apply .text-grey-darker;
+  @apply .text-gray-800;
   @apply .text-lg;
 }
 
 code,
 pre {
-  @apply .bg-grey-light;
+  @apply .bg-gray-200;
   @apply .px-2;
   @apply .py-px;
   @apply .rounded;
@@ -119,7 +106,7 @@ pre {
 
 :not(pre) > code[class*='language-'],
 pre[class*='language-'] {
-  @apply .bg-grey-light;
+  @apply .bg-gray-200;
   padding: 1rem;
 }
 
@@ -127,7 +114,24 @@ code[class*='language-'],
 pre[class*='language-'] {
   @apply .font-normal;
   @apply .text-sm;
-  @apply .roman;
+  @apply .not-italic;
+}
+
+pre {
+  @apply .bg-gray-200;
+  @apply .leading-loose;
+  @apply .my-6;
+  @apply .overflow-x-auto;
+  @apply .p-4;
+  @apply .rounded;
+  @apply .shadow;
+  @apply .text-base;
+
+  code {
+    @apply .bg-transparent;
+    @apply .block;
+    @apply .p-0;
+  }
 }
 
 h1,
@@ -139,7 +143,7 @@ h6 {
   @apply .leading-tight;
   @apply .mb-4;
   @apply .mt-8;
-  @apply .text-black;
+  @apply .text-gray-900;
 
   &:first-child {
     @apply .mt-0;
@@ -178,7 +182,7 @@ h6 {
 
 hr {
   @apply .border-b;
-  @apply .border-blue-lighter;
+  @apply .border-blue-200;
   @apply .my-12;
   @apply .rounded-full;
 }
@@ -195,6 +199,16 @@ ul {
   @apply .my-4;
 }
 
+main ul {
+  list-style-type: disc;
+  padding-left: theme('padding.4');
+}
+
+main ol {
+  list-style-type: decimal;
+  padding-left: theme('padding.4');
+}
+
 p {
   @apply .my-3;
 
@@ -203,26 +217,9 @@ p {
   }
 }
 
-pre {
-  @apply .bg-grey-lighter;
-  @apply .leading-loose;
-  @apply .my-6;
-  @apply .overflow-x-auto;
-  @apply .p-4;
-  @apply .rounded;
-  @apply .shadow;
-  @apply .text-base;
-
-  code {
-    @apply .bg-transparent;
-    @apply .block;
-    @apply .p-0;
-  }
-}
-
 ::selection {
-  @apply .bg-indigo-lightest;
-  @apply .text-blue-dark;
+  @apply .bg-blue-500;
+  @apply .text-white;
 }
 
 @tailwind utilities;
