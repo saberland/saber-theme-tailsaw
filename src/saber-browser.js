@@ -1,3 +1,7 @@
+import 'typeface-nunito-sans/index.css'
+import 'prismjs/themes/prism.css'
+import './assets/css/base.css'
+
 export default ({ router }) => {
   // Progress bar is not needed on server-side
   if (process.browser) {
