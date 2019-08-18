@@ -7,15 +7,16 @@
       <label for="search" class="hidden">Search</label>
 
       <input
-        v-model="query"
-        ref="search"
         class="transition-fast relative block h-10 w-full lg:w-1/2 lg:focus:w-3/4 bg-gray-100 border border-gray-500 focus:border-blue-400 outline-none cursor-pointer text-gray-700 px-4 pb-0 pt-px"
         :class="{ 'transition-border': query }"
         autocomplete="off"
         name="search"
         placeholder="Search"
-        type="text"
+        type="search"
+        ref="search"
+        @keyup="query = $refs.search.value"
         @keyup.esc="reset()"
+        @keyup.enter="goTo()"
       />
 
       <button
@@ -94,11 +95,12 @@ export default {
       })
     },
     reset() {
-      console.log('reseted')
-      this.query = ''
+      this.$refs.search.value = ''
       this.searching = false
     },
     goTo(to) {
+      if (!to) to = this.results[0] && this.results[0].permalink
+      if (!to) return
       this.$router.push(to)
       this.reset()
     }
