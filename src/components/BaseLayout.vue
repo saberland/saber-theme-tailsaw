@@ -214,7 +214,7 @@ p {
 }
 
 ::selection {
-  @apply .bg-blue-500;
+  @apply .bg-blue-200;
   @apply .text-white;
 }
 
