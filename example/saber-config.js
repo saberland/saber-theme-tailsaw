@@ -39,7 +39,7 @@ module.exports = {
       resolve: 'saber-plugin-critical'
     },
     {
-      resolve: 'saber-plugin-local-search'
+      resolve: 'saber-plugin-search'
     }
   ]
 }

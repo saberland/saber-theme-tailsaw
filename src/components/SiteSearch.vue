@@ -79,6 +79,9 @@
 </template>
 
 <script>
+import Fuse from 'fuse.js'
+import debounce from 'lodash.debounce'
+
 export default {
   data() {
     return {
@@ -103,11 +106,30 @@ export default {
       if (!to) return
       this.$router.push(to)
       this.reset()
+    },
+    search() {
+      if (window.__FUSE__) this.results = window.__FUSE__.search(this.query)
     }
   },
   watch: {
-    async query(query) {
-      this.results = await this.$searchPages(query)
+    query: debounce(
+      function() {
+        this.search()
+      },
+      50,
+      {
+        leading: true,
+        trailing: true
+      }
+    )
+  },
+  async mounted() {
+    if (!window.__FUSE__) {
+      const database = await this.$fetchSearchDatabase()
+      window.__FUSE__ = new Fuse(database, {
+        shouldSort: true,
+        keys: Object.keys(database[0])
+      })
     }
   }
 }

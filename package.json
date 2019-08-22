@@ -59,6 +59,8 @@
     "bracketSpacing": true
   },
   "dependencies": {
+    "fuse.js": "^3.4.5",
+    "lodash.debounce": "^4.0.8",
     "nprogress": "^0.2.0",
     "typeface-nunito-sans": "^0.0.72"
   },
@@ -73,15 +75,15 @@
     "saber": "^0.7.0",
     "saber-plugin-critical": "^1.0.2",
     "saber-plugin-prismjs": "^0.2.1",
-    "saber-plugin-local-search": "^0.0.1",
     "saber-plugin-query-posts": "^0.4.0",
+    "saber-plugin-search": "^0.0.20.0.2-canary.366.524f251.0",
     "tailwindcss": "^1.1.2",
     "vue-compile": "^0.6.0",
     "xo": "^0.24.0"
   },
   "peerDependencies": {
     "saber": ">=0.7.0",
-    "saber-plugin-local-search": ">=0.0.1",
-    "saber-plugin-query-posts": ">=0.4.0"
+    "saber-plugin-query-posts": ">=0.4.0",
+    "saber-plugin-search": "^0.0.20.0.2-canary.366.524f251.0"
   }
 }
