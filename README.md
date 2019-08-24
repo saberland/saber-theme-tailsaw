@@ -12,6 +12,11 @@ Then, in your Saber config file:
 
 ```yml
 theme: tailsaw
+plugins:
+  - saber-plugin-query-posts
+  - saber-plugin-prismjs
+  - saber-plugin-critical
+  - saber-plugin-search
 ```
 
 This starter template includes samples of common page types, and comes pre-configured with:
@@ -57,7 +62,7 @@ featured: true
 
 ### Adding Assets
 
-You can easily include assets in your posts, just by [linking to their relative location](https://saber.land/docs/images-fonts-and-files.html). 
+You can easily include assets in your posts, just by [linking to their relative location](https://saber.land/docs/images-fonts-and-files.html).
 
 ---
 

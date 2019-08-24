@@ -26,7 +26,7 @@
         </div>
 
         <div class="flex flex-1 justify-end items-center">
-          <SiteSearch />
+          <SiteSearch v-if="$fetchSearchDatabase" />
 
           <nav class="hidden lg:flex items-center justify-end text-lg">
             <NavLink
