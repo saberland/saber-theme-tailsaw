@@ -16,6 +16,7 @@ plugins:
   - saber-plugin-query-posts
   - saber-plugin-prismjs
   - saber-plugin-critical
+  # If you want to enable local search:
   - saber-plugin-search
 ```
 
