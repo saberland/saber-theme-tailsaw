@@ -7665,10 +7665,10 @@ saber-plugin-query-posts@^0.4.0:
     slugo "^0.2.3"
     url-join "^4.0.0"
 
-saber-plugin-search@^0.0.20.0.2-canary.366.524f251.0:
-  version "0.0.2-canary.366.524f251.0"
-  resolved "https://registry.yarnpkg.com/saber-plugin-search/-/saber-plugin-search-0.0.2-canary.366.524f251.0.tgz#859a92582bda2503be1fd26016e50bf5fd971eba"
-  integrity sha512-hqIDetGnxvZtbYXpUvIILT4sOECVYxiXVedJuI6gp7dTwXPjY9VFhzgvPwq+pyiW0D4H08W4TzFdOhu8KbpB0w==
+saber-plugin-search@^0.1.0:
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/saber-plugin-search/-/saber-plugin-search-0.1.0.tgz#5d249c1c58dd33a47dfda3ed4f37ff40aef2f099"
+  integrity sha512-D9P5bxo0PnEXcrLJKdxpyfyIeZs2yb5YSJywjz1H4L5t79Qil9xx9MhYTU7x1dupurNAZZ+N4F63RTnez44Dqg==
 
 saber-utils@^0.2.0:
   version "0.2.0"
