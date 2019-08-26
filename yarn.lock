@@ -7892,14 +7892,14 @@ rxjs@^6.4.0:
   dependencies:
     tslib "^1.9.0"
 
-saber-highlighter-prism@^0.3.1:
-  version "0.3.1"
-  resolved "https://registry.yarnpkg.com/saber-highlighter-prism/-/saber-highlighter-prism-0.3.1.tgz#05566507e0c1e7450887be0c5dc7726bd44991e0"
-  integrity sha512-ppghAz6tW496Enpfr7S43N11wEPm8eoe+35caSYY6mdm1ME1iU4kEjFufM9xbzHYOcYBQQ0aDe1fuIBrzj5qZw==
+saber-highlighter-prism@^0.3.2:
+  version "0.3.2"
+  resolved "https://registry.yarnpkg.com/saber-highlighter-prism/-/saber-highlighter-prism-0.3.2.tgz#2e0cbe94f99abbbc8bacafa773a6dfb5ff03e785"
+  integrity sha512-EQMYBSV1mlsMNx2sVHKOVS8W4I/w6lrHQVryYrefTddohMEZ3oHQg6BBhYMcM0l6dbOvq8opgGWg5sOX94zIRQ==
   dependencies:
-    saber-log "^0.2.0"
+    saber-log "^0.2.1"
 
-saber-log@^0.2.0, saber-log@^0.2.1:
+saber-log@^0.2.1:
   version "0.2.1"
   resolved "https://registry.yarnpkg.com/saber-log/-/saber-log-0.2.1.tgz#66ec48a0045a986e5a24e459f6a5742cf409c0e5"
   integrity sha512-MonLvHtwy59YaB5S5VQBkkVSjcJMejoAM77yy8URElGbfwjdVkKyABWPUg+zjmsMkivx35VhtWbjiN46j/h8iw==
@@ -7917,11 +7917,11 @@ saber-plugin-critical@^1.0.2:
     critical "^1.3.4"
 
 saber-plugin-prismjs@^0.2.1:
-  version "0.2.1"
-  resolved "https://registry.yarnpkg.com/saber-plugin-prismjs/-/saber-plugin-prismjs-0.2.1.tgz#678cbe3611d331a89429270a9639287941c0a1cf"
-  integrity sha512-oJA0DLxnS8RrAxy4e2CSa+kirvV7Gvi42lsme30LLTH5udbahz+e4roe572+3iu27wT/EQ3V0w8e2R5DddObZg==
+  version "0.2.2"
+  resolved "https://registry.yarnpkg.com/saber-plugin-prismjs/-/saber-plugin-prismjs-0.2.2.tgz#5448c3e4fdce6df12e5632442c6d39c37ecb0acf"
+  integrity sha512-VygI+f7WVNcTglzbVe3zTtBvQ3LXrM62saI1KLhI9Rpno6pi78AiBDD8t1d3yqUftmR9fwIln67a7RcVndKhKA==
   dependencies:
-    saber-highlighter-prism "^0.3.1"
+    saber-highlighter-prism "^0.3.2"
 
 saber-plugin-query-posts@^0.4.0:
   version "0.4.2"
