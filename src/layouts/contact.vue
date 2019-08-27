@@ -60,7 +60,7 @@
         <input
           type="submit"
           value="Submit"
-          class="block bg-blue hover:bg-blue-dark text-white text-sm font-semibold tracking-wide uppercase shadow rounded-lg cursor-pointer px-6 py-3"
+          class="block bg-blue-500 hover:bg-blue-700 text-white text-sm font-semibold tracking-wide uppercase shadow rounded-lg cursor-pointer px-6 py-3"
         />
       </div>
     </div>
