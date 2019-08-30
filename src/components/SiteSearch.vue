@@ -17,6 +17,7 @@
         @keyup="query = $refs.search.value"
         @keyup.esc="reset()"
         @keyup.enter="goTo()"
+        @blur="!results && reset()"
       />
 
       <button
@@ -100,6 +101,9 @@ export default {
     reset() {
       this.$refs.search.value = ''
       this.searching = false
+      this.results = []
+      this.query = ''
+      this.$refs.search.blur()
     },
     goTo(to) {
       if (!to) to = this.results[0] && this.results[0].permalink
