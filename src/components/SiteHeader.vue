@@ -4,7 +4,7 @@
       class="flex items-center shadow bg-white border-b h-24 py-4"
       role="banner"
     >
-      <div class="container flex items-center max-w-8xl mx-auto px-4 lg:px-8">
+      <div class="container flex items-center max-w-4xl mx-auto px-4 lg:px-8">
         <div class="flex items-center">
           <saber-link
             to="/"
@@ -18,7 +18,7 @@
             />
 
             <h1
-              class="text-lg md:text-2xl text-blue-800 font-semibold hover:text-blue-600 my-0"
+              class="text-lg md:text-2xl text-blue-darkest font-semibold hover:text-blue-dark my-0"
             >
               {{ $siteConfig.title }}
             </h1>
@@ -26,6 +26,8 @@
         </div>
 
         <div class="flex flex-1 justify-end items-center">
+          <SiteSearch v-if="$fetchSearchDatabase" />
+
           <nav class="hidden lg:flex items-center justify-end text-lg">
             <NavLink
               class="ml-6 text-grey-darker hover:text-blue-dark"
@@ -72,7 +74,7 @@
         'lg:block': nav
       }"
     >
-      <ul class="list-none p0 my-0">
+      <ul class="list-reset my-0">
         <li class="pl-4">
           <NavLink
             class="nav-menu__item hover:text-blue"
@@ -88,9 +90,10 @@
 
 <script>
 import NavLink from './NavLink'
+import SiteSearch from './SiteSearch'
 
 export default {
-  components: { NavLink },
+  components: { NavLink, SiteSearch },
   data() {
     return {
       nav: false

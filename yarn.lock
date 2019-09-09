@@ -4039,6 +4039,11 @@ functional-red-black-tree@^1.0.1:
   resolved "https://registry.yarnpkg.com/functional-red-black-tree/-/functional-red-black-tree-1.0.1.tgz#1b0ab3bd553b2a0d6399d29c0e3ea0b252078327"
   integrity sha1-GwqzvVU7Kg1jmdKcDj6gslIHgyc=
 
+fuse.js@^3.4.5:
+  version "3.4.5"
+  resolved "https://registry.yarnpkg.com/fuse.js/-/fuse.js-3.4.5.tgz#8954fb43f9729bd5dbcb8c08f251db552595a7a6"
+  integrity sha512-s9PGTaQIkT69HaeoTVjwGsLfb8V8ScJLx5XGFcKHg0MqLUH/UZ4EKOtqtXX9k7AFqCGxD1aJmYb8Q5VYDibVRQ==
+
 gauge@~2.7.3:
   version "2.7.4"
   resolved "https://registry.yarnpkg.com/gauge/-/gauge-2.7.4.tgz#2c03405c7538c39d7eb37b317022e325fb018bf7"
@@ -5425,6 +5430,11 @@ lodash.camelcase@^4.1.1:
   version "4.3.0"
   resolved "https://registry.yarnpkg.com/lodash.camelcase/-/lodash.camelcase-4.3.0.tgz#b28aa6288a2b9fc651035c7711f65ab6190331a6"
   integrity sha1-soqmKIorn8ZRA1x3EfZathkDMaY=
+
+lodash.debounce@^4.0.8:
+  version "4.0.8"
+  resolved "https://registry.yarnpkg.com/lodash.debounce/-/lodash.debounce-4.0.8.tgz#82d79bff30a67c4005ffd5e2515300ad9ca4d7af"
+  integrity sha1-gteb/zCmfEAF/9XiUVMArZyk168=
 
 lodash.defaults@4.2.0, lodash.defaults@^4.0.1:
   version "4.2.0"
@@ -7932,6 +7942,11 @@ saber-plugin-query-posts@^0.4.0:
   dependencies:
     slugo "^0.2.3"
     url-join "^4.0.0"
+
+saber-plugin-search@^0.1.0:
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/saber-plugin-search/-/saber-plugin-search-0.1.0.tgz#5d249c1c58dd33a47dfda3ed4f37ff40aef2f099"
+  integrity sha512-D9P5bxo0PnEXcrLJKdxpyfyIeZs2yb5YSJywjz1H4L5t79Qil9xx9MhYTU7x1dupurNAZZ+N4F63RTnez44Dqg==
 
 saber-utils@^0.2.1:
   version "0.2.1"

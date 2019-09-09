@@ -12,6 +12,12 @@ Then, in your Saber config file:
 
 ```yml
 theme: tailsaw
+plugins:
+  - saber-plugin-query-posts
+  - saber-plugin-prismjs
+  - saber-plugin-critical
+  # If you want to enable local search:
+  - saber-plugin-search
 ```
 
 This starter template includes samples of common page types, and comes pre-configured with:
@@ -19,14 +25,13 @@ This starter template includes samples of common page types, and comes pre-confi
 - A fully responsive theme
 - [Tailwind CSS](https://tailwindcss.com/), a utility CSS framework that allows you to customize your design without touching a line of CSS
 - Syntax highlighting using [Prism](https://prismjs.com)
+- A search bar which indexes your content automatically (when `saber-plugin-search` is used)
 - Progress bar and page transition
 - A custom 404 page
 - A component for accepting newsletter signups
 - A sample contact form
 
 Coming soon:
-
-- A search bar which indexes your content automatically and requires zero configuration
 - RSS feed and sitemap generator
 - Config options
 
@@ -57,7 +62,7 @@ featured: true
 
 ### Adding Assets
 
-You can easily include assets in your posts, just by [linking to their relative location](https://saber.land/docs/images-fonts-and-files.html). 
+You can easily include assets in your posts, just by [linking to their relative location](https://saber.land/docs/images-fonts-and-files.html).
 
 ---
 

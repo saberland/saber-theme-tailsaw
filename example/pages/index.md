@@ -1,6 +1,7 @@
 ---
 injectAllPosts: true
 layout: home
+title: Home
 ---
 
-foo
+Welcome to our site!

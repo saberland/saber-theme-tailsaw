@@ -59,8 +59,14 @@
     "bracketSpacing": true
   },
   "dependencies": {
+    "fuse.js": "^3.4.5",
+    "lodash.debounce": "^4.0.8",
     "nprogress": "^0.2.0",
-    "typeface-nunito-sans": "^0.0.72"
+    "typeface-nunito-sans": "^0.0.72",
+    "saber-plugin-critical": "^1.0.2",
+    "saber-plugin-prismjs": "^0.2.1",
+    "saber-plugin-query-posts": "^0.4.0",
+    "saber-plugin-search": "^0.1.0"
   },
   "devDependencies": {
     "@fullhuman/postcss-purgecss": "^1.2.0",
@@ -79,7 +85,6 @@
     "xo": "^0.24.0"
   },
   "peerDependencies": {
-    "saber": ">=0.7.0",
-    "saber-plugin-query-posts": ">=0.4.0"
+    "saber": ">=0.8.0"
   }
 }
