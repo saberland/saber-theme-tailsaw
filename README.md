@@ -52,8 +52,9 @@ author: Jane
 categories:
   - meta
 slug: first-post
-cover: /cover-1.png
 featured: true
+assets:
+  cover: ./first-post.png
 ---
 
 ```
