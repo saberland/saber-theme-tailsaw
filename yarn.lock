@@ -7916,10 +7916,15 @@ saber-log@^0.2.1:
   resolved "https://registry.yarnpkg.com/saber-log/-/saber-log-0.2.1.tgz#66ec48a0045a986e5a24e459f6a5742cf409c0e5"
   integrity sha512-MonLvHtwy59YaB5S5VQBkkVSjcJMejoAM77yy8URElGbfwjdVkKyABWPUg+zjmsMkivx35VhtWbjiN46j/h8iw==
 
-saber-markdown@^0.1.1:
-  version "0.1.1"
-  resolved "https://registry.yarnpkg.com/saber-markdown/-/saber-markdown-0.1.1.tgz#13e9f94dec1bd4b5719a1e4b1dafc5496478c2ed"
-  integrity sha512-pekUhzaA8dQHp1XO3uBKzeVXgcw2aLrobZ7gwBSm+vH0caG07UZimr7pW1eQJotagq8qCDKfk3vcDwDgD4RhsA==
+saber-log@^0.3.0:
+  version "0.3.0"
+  resolved "https://registry.yarnpkg.com/saber-log/-/saber-log-0.3.0.tgz#946b5a964e23b73aefe3fd2b86836641d2f1ad23"
+  integrity sha512-zXNL8E8bJYznYvZkNKdDyIjcg1jCHbyk17aaPHR315GKK919KGAtr7aAWe6Hj6VfV+yPe/VUFKmru8YjoXJJ1A==
+
+saber-markdown@^0.1.3:
+  version "0.1.3"
+  resolved "https://registry.yarnpkg.com/saber-markdown/-/saber-markdown-0.1.3.tgz#ae5ae1b74c2ed8d2838fb6795345eb3563ea05d0"
+  integrity sha512-MevxkvdMs5Uk+gqwRU0ULuZR38kgJX+vL1rc6G6cZi1/T6tuypOqoIbaOzRXhMG4OYghL/dIZ0Anz1imJCSxVQ==
 
 saber-plugin-critical@^1.0.2:
   version "1.0.2"
@@ -7948,15 +7953,15 @@ saber-plugin-search@^0.1.0:
   resolved "https://registry.yarnpkg.com/saber-plugin-search/-/saber-plugin-search-0.1.0.tgz#5d249c1c58dd33a47dfda3ed4f37ff40aef2f099"
   integrity sha512-D9P5bxo0PnEXcrLJKdxpyfyIeZs2yb5YSJywjz1H4L5t79Qil9xx9MhYTU7x1dupurNAZZ+N4F63RTnez44Dqg==
 
-saber-utils@^0.2.1:
-  version "0.2.1"
-  resolved "https://registry.yarnpkg.com/saber-utils/-/saber-utils-0.2.1.tgz#20d4942cb5a3c61b7da97119c5aaae69b5c8b356"
-  integrity sha512-hTDJk4MWg1FYlMZeK1y2SnRAJJxHLyItojrWDScc9pAWTJUOHAWat2DwgXYxDujE3yryuXxDBVXIa2VkrxN8Nw==
+saber-utils@^0.2.2:
+  version "0.2.2"
+  resolved "https://registry.yarnpkg.com/saber-utils/-/saber-utils-0.2.2.tgz#48c60d83ec4982b7c6f4de1b9159cf6efb1d00cc"
+  integrity sha512-JL3F4LCE+woGUdUpOYohaSYkN13/CFCwdvZCcP8ACLOdo9ip7GXAcUK0hkfDgiLX9YIlMEeSfC1yOUpH7/PiAQ==
 
-saber@^0.8.1:
-  version "0.8.1"
-  resolved "https://registry.yarnpkg.com/saber/-/saber-0.8.1.tgz#322d72f2ec548fdbfb512ed7ddb81fedf17502e1"
-  integrity sha512-jmir7kmRnUeGHziBcbgpKpflaF4nrhsWyGTbwY99S2fR7EfvF0JVUEKtN9KZ8h6DS9EvzGBB5l8s5ubKls/eMg==
+saber@^0.9.1:
+  version "0.9.1"
+  resolved "https://registry.yarnpkg.com/saber/-/saber-0.9.1.tgz#8682fc15bbca28c26c0d0dc88025549e26223d5f"
+  integrity sha512-FZYWz1sz/2sKzQJ2/UPlb6woaTlztPxQHnqUBd1vpWZ9MYl6o4sQarnnwg5StUAcIOaUfTH1rnFoUDyBBZemOg==
   dependencies:
     "@babel/core" "^7.5.4"
     "@babel/plugin-proposal-object-rest-spread" "^7.5.4"
@@ -7988,9 +7993,9 @@ saber@^0.8.1:
     prettier "^1.17.0"
     pretty-ms "^5.0.0"
     resolve-from "^5.0.0"
-    saber-log "^0.2.1"
-    saber-markdown "^0.1.1"
-    saber-utils "^0.2.1"
+    saber-log "^0.3.0"
+    saber-markdown "^0.1.3"
+    saber-utils "^0.2.2"
     serve-static "^1.13.2"
     slugo "^0.2.3"
     superstruct "^0.6.0"
