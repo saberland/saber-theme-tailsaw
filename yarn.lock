@@ -7936,11 +7936,11 @@ saber-plugin-prismjs@^0.2.1:
     saber-highlighter-prism "^0.3.2"
 
 saber-plugin-query-posts@^0.4.0:
-  version "0.4.2"
-  resolved "https://registry.yarnpkg.com/saber-plugin-query-posts/-/saber-plugin-query-posts-0.4.2.tgz#462aef81707ecf65063331460b7013279944651c"
-  integrity sha512-yn+YfRLcLELqH36CtclhFyCBET5OV/MHPvZHUexEq1SVEUazhx5gi52gcCan59Okn6W0k6Y1xkF3NCfCUKezTQ==
+  version "0.4.4"
+  resolved "https://registry.yarnpkg.com/saber-plugin-query-posts/-/saber-plugin-query-posts-0.4.4.tgz#b39104323f5b88eb9fe20b384e83132b646cebfd"
+  integrity sha512-DxW/d1vQ7UbVULv7y8kSHTPblxPfLsVw1ACSSE7Nu6U9nVFL3/ikzIh8K+sbe/Rt5+oJFzYZ1RkKkZoORif9Zg==
   dependencies:
-    slugo "^0.2.3"
+    slugo "^0.3.1"
     url-join "^4.0.0"
 
 saber-plugin-search@^0.1.0:
@@ -8228,6 +8228,11 @@ slugo@^0.2.3:
   version "0.2.3"
   resolved "https://registry.yarnpkg.com/slugo/-/slugo-0.2.3.tgz#2c602fe1e76d5fa3c6f75223537fbd80ae33929c"
   integrity sha512-4nav6mk321IWKaWxgvygjp2JB0d5sNGgkPUJ+EGQZmmcvuXS+4DwdhhPa9L8WBg6fVQDID3PO+t6wYM1NqVbkA==
+
+slugo@^0.3.1:
+  version "0.3.1"
+  resolved "https://registry.yarnpkg.com/slugo/-/slugo-0.3.1.tgz#e4ca4ab57612892c4e3f798a75895030dc3eb800"
+  integrity sha512-JYwX8/4pSFbYwTtrWco0GWbmsVAAk/ahi5MjnHG6oj8sBdF1M2Qu1JmG8vaPE1AGxpuAfyIH5yzxdkH7aAFc2w==
 
 snapdragon-node@^2.0.1:
   version "2.1.1"
