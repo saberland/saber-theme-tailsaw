@@ -15,7 +15,6 @@ theme: tailsaw
 plugins:
   - saber-plugin-query-posts
   - saber-plugin-prismjs
-  - saber-plugin-critical
   # If you want to enable local search:
   - saber-plugin-search
 ```
@@ -32,6 +31,7 @@ This starter template includes samples of common page types, and comes pre-confi
 - A sample contact form
 
 Coming soon:
+
 - RSS feed and sitemap generator
 - Config options
 

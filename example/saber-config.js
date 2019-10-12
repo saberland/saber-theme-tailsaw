@@ -36,9 +36,6 @@ module.exports = {
       resolve: 'saber-plugin-prismjs'
     },
     {
-      resolve: 'saber-plugin-critical'
-    },
-    {
       resolve: 'saber-plugin-search'
     }
   ]

@@ -63,7 +63,6 @@
     "lodash.debounce": "^4.0.8",
     "nprogress": "^0.2.0",
     "typeface-nunito-sans": "^0.0.72",
-    "saber-plugin-critical": "^1.0.2",
     "saber-plugin-prismjs": "^0.2.1",
     "saber-plugin-query-posts": "^0.4.0",
     "saber-plugin-search": "^0.1.0"
@@ -77,7 +76,6 @@
     "postcss-nested": "^4.1.2",
     "prismjs": "^1.16.0",
     "saber": "^0.8.1",
-    "saber-plugin-critical": "^1.0.2",
     "saber-plugin-prismjs": "^0.2.1",
     "saber-plugin-query-posts": "^0.4.0",
     "tailwindcss": "^1.1.2",
