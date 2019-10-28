@@ -46,9 +46,10 @@
             >
               {{ result.title }}
 
-              <span class="block font-normal text-gray-700 text-sm my-1">
-                {{ result.excerpt }}
-              </span>
+              <span
+                class="block font-normal text-gray-700 text-sm my-1"
+                v-html="result.excerpt"
+              />
             </a>
 
             <div
