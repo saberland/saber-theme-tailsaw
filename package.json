@@ -65,7 +65,7 @@
     "typeface-nunito-sans": "^0.0.72",
     "saber-plugin-prismjs": "^0.2.1",
     "saber-plugin-query-posts": "^0.4.0",
-    "saber-plugin-search": "^0.1.0"
+    "saber-plugin-search": "^1.0.0"
   },
   "devDependencies": {
     "@fullhuman/postcss-purgecss": "^1.2.0",
