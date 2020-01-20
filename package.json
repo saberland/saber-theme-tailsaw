@@ -68,7 +68,7 @@
     "saber-plugin-search": "^0.1.0"
   },
   "devDependencies": {
-    "@fullhuman/postcss-purgecss": "^1.2.0",
+    "@fullhuman/postcss-purgecss": "^2.0.4",
     "autoprefixer": "^9.5.1",
     "eslint-config-prettier": "^6.0.0",
     "eslint-config-rem": "^4.0.0",
